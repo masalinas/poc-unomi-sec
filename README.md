@@ -10,11 +10,12 @@ docker compose up -d
 
 # Start WSO2 IAM Indentity Server Manager (IAM)
 ```
-docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/carbon.xml:/home/wso2carbon/wso2is-7.0.0/repository/conf/carbon.xml wso2/wso2is:7.0.0
+docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/deployment.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
 ```
 
-Access to Management Console (Carbon)
-[WSO2 Management Console](https://localhost:9445/carbon/admin/login.jsp)
+Access to Management Console UI. In this version exist a new one:
+[Old WSO2 Management Console UI](https://localhost:9445/carbon)
+[New WSO2 Management Console UI](https://localhost:9445/console)
 
 **Username**: admin
 **Password**: admin
