@@ -8,6 +8,14 @@ Execute this command:
 docker compose up -d
 ```
 
+Access to the cluster:
+**Username**: karaf
+**Password**: karaf
+
+```
+https://localhost:9444/cxs/cluster
+```
+
 # Start WSO2 IAM Indentity Server Manager (IAM)
 We start WSO2 in a different port tham 9443. Ww will use the 9445 configuring the **deployment.tom** file adding offset attribute like this:
 
