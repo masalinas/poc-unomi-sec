@@ -8,7 +8,7 @@ Execute this command:
 docker compose up -d
 ```
 
-## Check cluster and send some requests
+### Check cluster and send some requests
 To access to any Unomi resource we will use the default credentials as basic authentication:
 **Username**: karaf
 **Password**: karaf
