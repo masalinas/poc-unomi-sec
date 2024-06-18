@@ -9,6 +9,16 @@ docker compose up -d
 ```
 
 # Start WSO2 IAM Indentity Server Manager (IAM)
+We start WSO2 in a different port tham 9443. Ww will use the 9445 configuring the **deployment.tom** file adding offset attribute like this:
+
+```
+[server]
+hostname = "localhost"
+node_ip = "127.0.0.1"
+base_path = "https://$ref{server.hostname}:${carbon.management.port}"
+offset = 2
+```
+
 ```
 docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/deployment.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
 ```
