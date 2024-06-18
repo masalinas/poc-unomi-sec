@@ -43,13 +43,9 @@ offset = 2
 docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/deployment.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
 ```
 
-Access to Management Console UI:
+Access to Management Console UI: https://localhost:9445/carbon
 
-[Old WSO2 Management Console UI](https://localhost:9445/carbon)
-
-In this version exist a new Management Console UI located under /console path:
-
-[New WSO2 Management Console UI](https://localhost:9445/console)
+In this version exist a new Management Console UI located under /console path: https://localhost:9445/console
 
 The default credentials to access is:
 - **Username**: admin
