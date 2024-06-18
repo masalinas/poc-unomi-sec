@@ -8,12 +8,23 @@ Execute this command:
 docker compose up -d
 ```
 
-Access to the cluster:
+# Check cluster and send some requests
+To access to any Unomi resource we will use the default credentials as a basic authentication:
 **Username**: karaf
 **Password**: karaf
 
 ```
 https://localhost:9444/cxs/cluster
+```
+
+Access to Unomi swagger API
+```
+https://localhost:9444/cxs/api-docs?url=openapi.json
+```
+
+From curl list all users
+```
+curl --insecure -u karaf:karaf -H "Content-Type: application/hal+json" https://localhost:9444/cxs/userList
 ```
 
 # Start WSO2 IAM Indentity Server Manager (IAM)
