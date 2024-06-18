@@ -13,18 +13,19 @@ To access to any Unomi resource we will use the default credentials as a basic a
 **Username**: karaf
 **Password**: karaf
 
+Check cluster status from browser:
 ```
 https://localhost:9444/cxs/cluster
 ```
 
-Access to Unomi swagger API
+Access to Unomi swagger API:
 ```
-https://localhost:9444/cxs/api-docs?url=openapi.json
+https://localhost:9444/cxs/api-docs
 ```
 
-From curl list all users
+Using curl list cluster info:
 ```
-curl --insecure -u karaf:karaf -H "Content-Type: application/hal+json" https://localhost:9444/cxs/userList
+curl -X GET --insecure -u karaf:karaf -H "Accept: application/json" https://localhost:9444/cxs/privacy/info
 ```
 
 # Start WSO2 IAM Indentity Server Manager (IAM)
