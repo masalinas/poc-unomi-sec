@@ -8,9 +8,9 @@ Execute this command:
 docker compose up -d
 ```
 
-# start WSO2 IAM Indentity Server Manager (IAM)
+# Start WSO2 IAM Indentity Server Manager (IAM)
 ```
-docker run -it --name consum-wso2 -d -p 9445:9443 wso2/wso2is:7.0.0
+docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/carbon.xml:/home/wso2carbon/wso2is-7.0.0/repository/conf/carbon.xml wso2/wso2is:7.0.0
 ```
 
 Access to Management Console (Carbon)
@@ -19,8 +19,12 @@ Access to Management Console (Carbon)
 **Username**: admin
 **Password**: admin
 
+# Start HAProxy
+
 # Links
 
 Some links:
 
+- [WSO2 Documentation](https://is.docs.wso2.com/en/latest/)
 - [WSO2 Docker](https://hub.docker.com/r/wso2/wso2is)
+- [HAProxy Docker](https://hub.docker.com/_/haproxy)
