@@ -1,7 +1,7 @@
 # Description
 PoC Apache Unomi Securized
 
-# Start Apache Unomi service
+# Start Apache Unomi
 Execute this command:
 
 ```
