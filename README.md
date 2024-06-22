@@ -29,7 +29,7 @@ curl -X GET --insecure -u karaf:karaf -H "Accept: application/json" https://loca
 ```
 
 # Start WSO2 API Manager Server (wso2-am) (AM)
-We start WSO2 in a the port 9444 from the default 9443. We will use the 9445 configuring the **deployment.tom** file adding offset attribute like this:
+We start WSO2 in a the port 9444 from the default 9443. We will use the 9444 configuring the **deployment.tom** file adding offset attribute like this:
 
 ```
 [server]
