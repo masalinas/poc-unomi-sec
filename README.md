@@ -40,7 +40,7 @@ offset = 2
 ```
 
 ```
-docker run -it --name consum-wso2 -d -p 9445:9445 --volume /mnt/c/git/poc-unomi-sec/deployment.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
+docker run -it --name poc-wso2-is -d -p 9445:9445 --volume $PWD/deployment.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
 ```
 
 Access to Management Console UI: https://localhost:9445/carbon
