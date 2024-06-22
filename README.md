@@ -29,19 +29,19 @@ curl -X GET --insecure -u karaf:karaf -H "Accept: application/json" https://loca
 ```
 
 # Start WSO2 API Manager Server (wso2-am) (AM)
-We start WSO2 in a the port 9444 from the default 9443. We will use the 9444 configuring the **deployment.tom** file adding offset attribute like this:
+We start WSO2 in a the port 9446 from the default 9443. We will use the 9446 configuring the **deployment.tom** file adding offset attribute like this:
 
 ```
 [server]
 hostname = "localhost"
-offset=1
+offset=3
 base_path = "${carbon.protocol}://${carbon.host}:${carbon.management.port}"
 #discard_empty_caches = false
 server_role = "default"
 ```
 
 ```
-docker run -it --name poc-wso2-am -d -p 8280:8280 -p 8243:8243 -p 9444:9444 --volume $PWD/deployment-am.toml:/home/wso2carbon/wso2am-4.0.0/repository/conf/deployment.toml wso2/wso2am:4.0.0
+docker run -it --name poc-wso2-am -d -p 8280:8280 -p 8243:8243 -p 9446:9446 --volume $PWD/deployment-am.toml:/home/wso2carbon/wso2am-4.0.0/repository/conf/deployment.toml wso2/wso2am:4.0.0
 ```
 To access to Management Console UI: https://localhost:9444/carbon
 To access the API Manager Publisher: https://localhost:9444/publisher
