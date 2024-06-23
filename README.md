@@ -29,7 +29,7 @@ curl -X GET --insecure -u karaf:karaf -H "Accept: application/json" https://loca
 ```
 
 # Start WSO2 API Manager Server (wso2-am) (AM)
-We will apply a offset of 3 to all ports used by WSO2 AM because we have portainer in 9443 port. We will configured this offset in the file **deployment.tom** setting 3 to the offset attribute like this:
+We will configured a offset of 3 to WSO2 AM because we have portainer in 9443 port. We will configured this offset in the file **deployment.tom** setting 3 to the offset attribute like this:
 
 ```
 [server]
