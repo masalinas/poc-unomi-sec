@@ -40,7 +40,7 @@ base_path = "${carbon.protocol}://${carbon.host}:${carbon.management.port}"
 server_role = "default"
 ```
 
-Now when start the docker WSO2 AM we must add 3 to all ports published by WSO2 like this:
+Now when start the docker WSO2 AM we must add 3 offset to all ports published by WSO2 like this:
 ```
 docker run -it --name poc-wso2-am -d -p 8283:8283 -p 8246:8246 -p 9446:9446 --volume $PWD/deployment-am.toml:/home/wso2carbon/wso2am-4.0.0/repository/conf/deployment.toml wso2/wso2am:4.0.0
 ```
