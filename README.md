@@ -57,7 +57,7 @@ The default credentials to all portals is:
 - **Password**: admin
 
 # Start WSO2 Indentity Server (wso2-is) (IAM)
-We start WSO2 in a the port 9445 from the default 9443. We will use the 9445 configuring the **deployment.tom** file adding offset attribute like this:
+We will configured a offest of 2 to WSO2 IS because we hace portainer deployed in 9443 port. We will configured this offset in the file **deployment.tom** adding a offset of 2 to this attribute like this:
 
 ```
 [server]
@@ -66,6 +66,8 @@ node_ip = "127.0.0.1"
 base_path = "https://$ref{server.hostname}:${carbon.management.port}"
 offset = 2
 ```
+
+Also we must add this offset to the port published by WSO IS like this:
 
 ```
 docker run -it --name poc-wso2-is -d -p 9445:9445 --volume $PWD/deployment-is.toml:/home/wso2carbon/wso2is-7.0.0/repository/conf/deployment.toml wso2/wso2is:7.0.0
