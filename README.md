@@ -47,9 +47,9 @@ docker run -it --name poc-wso2-am -d -p 8283:8283 -p 8246:8246 -p 9446:9446 --vo
 
 All portals offered by WSO2 AM are:
 
-To access to Management Console UI: https://localhost:9446/carbon
-To access the API Manager Publisher: https://localhost:9446/publisher
-To access the API Manager Developer Portal: https://localhost:9446/devportal (We cam open this portal from API Manager Publisher for each API created)
+- To access to Management Console UI: https://localhost:9446/carbon
+- To access the API Manager Publisher: https://localhost:9446/publisher
+- To access the API Manager Developer Portal: https://localhost:9446/devportal (We cam open this portal from API Manager Publisher for each API created)
 
 The default credentials to all portals is:
 
