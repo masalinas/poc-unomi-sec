@@ -18,7 +18,7 @@ Check cluster status from browser:
 https://localhost:9444/cxs/cluster
 ```
 
-Access to Unomi REST API openapi UI:
+Access to Unomi REST API Swagger UI Portal:
 ```
 https://localhost:9444/cxs/api-docs?url=https://localhost:9444/cxs/openapi.json
 ```
