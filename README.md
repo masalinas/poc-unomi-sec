@@ -23,7 +23,7 @@ Access to Unomi REST API Swagger UI Portal:
 https://localhost:9444/cxs/api-docs?url=https://localhost:9444/cxs/openapi.json
 ```
 
-Exist a default swagger UI API (?)
+Exist a default PetStore Awagger UI API (?)
 
 ```
 https://localhost:9444/cxs/api-docs
