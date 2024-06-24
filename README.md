@@ -20,7 +20,7 @@ https://localhost:9444/cxs/cluster
 
 Access to Unomi REST API openapi UI:
 ```
-https://localhost:9444/cxs/api-docs?url=openapi.json
+https://localhost:9444/cxs/api-docs?url=https://localhost:9444/cxs/openapi.json
 ```
 
 Exist a default swagger UI API (?)
